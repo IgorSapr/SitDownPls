@@ -45,7 +45,9 @@
       <header class="header">
   <div class="container header__container grid">
     <a href="tel:+74958854547" class="header__phone">
-      <img loading="lazy" src="./img/phone.svg" width="22" height="22" alt="телефон" />
+      <svg class="header__phone--svg">
+        <use xlink:href="img/sprite.svg#phone"></use>
+      </svg>
       +7 ­(495)­ 885-45-47</a
     >
     <nav class="nav nav-top" title="Дополнительное меню">
@@ -91,9 +93,6 @@
     </nav>
     <form action="#" class="form form-header">
       <label class="form__label form-header__label">
-        <svg class="">
-          <use xlink:href="img/sprite.svg#search-img"></use>
-        </svg>
         <input
           type="search"
           name="поиск"
@@ -101,8 +100,11 @@
           placeholder="Я хочу купить..."
           aria-label="Поиск по сайту"
         />
+        <svg class="form-header__label--svg">
+          <use xlink:href="img/sprite.svg#search-img"></use>
+        </svg>
         <button class="btn-reset header__btn-dropdown" aria-label="Поиск по сайту">
-          <svg class="header__btn-svg">
+          <svg class="header__btn-dropdown--svg">
             <use xlink:href="img/sprite.svg#btn-dropdown"></use>
           </svg>
         </button>

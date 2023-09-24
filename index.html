@@ -96,16 +96,16 @@
         <input
           type="search"
           name="поиск"
-          class="input-reset form__input form-header__input"
+          class="input-reset form__input form-header__input input-search"
           placeholder="Я хочу купить..."
           aria-label="Поиск по сайту"
         />
         <svg class="form-header__label--svg">
           <use xlink:href="img/sprite.svg#search-img"></use>
         </svg>
-        <button class="btn-reset header__btn-dropdown" aria-label="Поиск по сайту">
-          <svg class="header__btn-dropdown--svg">
-            <use xlink:href="img/sprite.svg#btn-dropdown"></use>
+        <button type="submit" class="btn-reset form-header__btn-search" aria-label="Поиск по сайту">
+          <svg class="form-header__btn-search--svg">
+            <use xlink:href="img/sprite.svg#btn-search"></use>
           </svg>
         </button>
       </label>
@@ -126,7 +126,13 @@
   </div>
 </header>
 
-      <main class="main"></main>
+      <main class="main"><section class="hero">
+  <div class="container hero__container">
+    <h1 class="hero__title">Скидка 15% на первую покупку</h1>
+    <button class="btn-reset btn btn--primary hero__btn">Получить!</button>
+  </div>
+</section>
+</main>
       <footer class="footer">
   <div class="container"></div>
 </footer>

@@ -184,7 +184,7 @@ const rules = [{
   }, {
     rule: 'required',
     value: true,
-    errorMessage: 'Заполните имя товара!'
+    errorMessage: 'Заполните название товара!'
   }]
 }];
 const afterForm = () => {

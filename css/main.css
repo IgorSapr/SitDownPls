@@ -220,7 +220,7 @@ a {
   background-color: var(--primary_shade-color);
 }
 .btn--secondary {
-  padding: 19px 35px;
+  padding: 17px 34px;
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -242,6 +242,7 @@ a {
 
 .title {
   margin: 0;
+  margin-bottom: 26px;
   font-weight: 400;
   font-size: 32px;
   line-height: 100%;
@@ -460,13 +461,38 @@ a {
 }
 
 .card {
-  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border-radius: 10px;
+  height: 100%;
   background-color: var(--grey_light-color);
+}
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 30px;
+  padding-top: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .card__title {
   margin: 0;
   margin-bottom: 22px;
+  width: 100%;
   font-weight: 400;
   font-size: 24px;
   line-height: 130%;
@@ -478,9 +504,11 @@ a {
   font-size: 16px;
   line-height: 130%;
 }
+.card__btn {
+  margin-top: auto;
+}
 .card-specials {
   position: relative;
-  padding-bottom: 27px;
 }
 .card-specials__discount {
   display: -webkit-box;
@@ -516,7 +544,7 @@ a {
   -ms-flex-align: end;
   align-items: flex-end;
   margin-bottom: 16px;
-  min-height: 252px;
+  height: 282px;
 }
 .card-specials__top--image {
   display: block;
@@ -530,7 +558,7 @@ a {
   display: block;
 }
 .card-specials__price {
-  margin-bottom: 22px;
+  margin-bottom: 23px;
 }
 .card-specials__price ins {
   margin-right: 30px;
@@ -540,6 +568,50 @@ a {
 }
 .card-specials__price del {
   color: var(--grey-color);
+}
+.card-rating {
+  position: relative;
+}
+.card-rating__count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  -webkit-column-gap: 6px;
+  -moz-column-gap: 6px;
+  column-gap: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--secondary-color);
+}
+.card-rating__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  height: 191px;
+}
+.card-rating__top--image {
+  display: block;
+}
+.card-rating__title {
+  margin-bottom: 24px;
+}
+.card-rating__price {
+  margin-bottom: 22px;
+  color: var(--grey_shade-color);
 }
 
 .header {
@@ -735,9 +807,6 @@ a {
 .specials {
   margin-bottom: 70px;
 }
-.specials__title {
-  margin-bottom: 26px;
-}
 .specials__item {
   -ms-grid-column-span: 3;
   grid-column: 3 span;
@@ -745,5 +814,49 @@ a {
 .specials__item--center {
   -ms-grid-column-span: 6;
   grid-column: 6 span;
+}
+
+.rating {
+  margin-bottom: 69px;
+}
+.rating__list {
+  gap: 32px;
+}
+.rating__item {
+  -ms-grid-column-span: 3;
+  grid-column: 3 span;
+}
+
+.oxford {
+  margin-bottom: 70px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 153px;
+  padding-bottom: 149px;
+  background-image: url("../img/oxford-fon.png");
+}
+.oxford__content {
+  margin-bottom: 49px;
+  width: 508px;
+}
+.oxford__title {
+  margin: 0;
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  color: var(--gold-color);
+}
+.oxford__descr {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: var(--white-color);
+}
+.oxford__btn {
+  padding: 21px 30px;
 }
 /*# sourceMappingURL=main.css.map */

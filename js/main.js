@@ -191,6 +191,42 @@ const afterForm = () => {
   console.log('Произошла отправка');
 };
 (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('.form-header', rules, afterForm);
+const rules1 = [{
+  ruleSelector: '.input-name',
+  rules: [{
+    rule: 'minLength',
+    value: 3,
+    errorMessage: 'Нужно 3 и более букв'
+  }, {
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните имя!'
+  }]
+}, {
+  ruleSelector: '.input-tel',
+  tel: true,
+  telError: 'Введите корректный телефон',
+  rules: [{
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните телефон!'
+  }]
+}, {
+  ruleSelector: '.input-email',
+  rules: [{
+    rule: 'required',
+    value: true,
+    errorMessage: 'Заполните Email!'
+  }, {
+    rule: 'email',
+    value: true,
+    errorMessage: 'Введите корректный Email!'
+  }]
+}];
+const afterForm1 = () => {
+  console.log('Произошла отправка');
+};
+(0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('.form-feedback', rules1, afterForm1);
 
 /***/ }),
 

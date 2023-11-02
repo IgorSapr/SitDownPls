@@ -43,6 +43,7 @@
   <body class="page__body">
     <div class="site-container">
       <header class="header">
+  <div class="header__create-line"></div>
   <div class="container header__container grid">
     <a href="tel:+74958854547" class="header__phone">
       <svg class="header__phone--svg">
@@ -129,7 +130,10 @@
       <main class="main">
         <section class="hero">
   <div class="container hero__container">
-    <h1 class="hero__title">Скидка 15% на первую покупку</h1>
+    <h1 class="hero__title">
+      Скидка 15%<br />
+      на первую покупку
+    </h1>
     <button class="btn-reset btn btn--primary hero__btn">Получить!</button>
   </div>
 </section>
@@ -170,13 +174,12 @@
           <span class="card-specials__discount"> − 10 000 </span>
           <div class="card-specials__top">
             <picture>
+              <source srcset="./img/card-img-tablet-2.png" media="(max-width: 1024px)" />
               <source srcset="./img/card-img-2.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/card-img-2.png"
-                class="card-specials__top--image"
-                width="450"
-                height="245"
+                class="card-specials__top--image card-specials__top--image-center"
                 alt="Диван тканевый “Z-44”"
               />
             </picture>
@@ -203,7 +206,7 @@
           </div>
         </article>
       </li>
-      <li class="specials__item">
+      <li class="specials__item specials__item-3">
         <article class="card card-specials">
           <span class="card-specials__discount"> − 600 </span>
           <div class="card-specials__top">
@@ -223,6 +226,83 @@
             <h3 class="card__title card-specials__title">Будильник<br />­“Quartz-23”­</h3>
             <span class="card__price card-specials__price"
               ><ins>1 290 руб</ins><del>1 890 руб</del>
+            </span>
+            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+          </div>
+        </article>
+      </li>
+      <li class="specials__item specials__item-mobile">
+        <article class="card card-specials">
+          <span class="card-specials__discount"> − 300 </span>
+          <div class="card-specials__top">
+            <picture>
+              <source srcset="./img/card-img-4.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/card-img-4.png"
+                class="card-specials__top--image"
+                width="117"
+                height="210"
+                alt="Мини-скульптура “Oh my deer”"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-specials__content">
+            <h3 class="card__title card-specials__title">
+              Мини-скульптура<br />­“Oh my deer”­
+            </h3>
+            <span class="card__price card-specials__price"
+              ><ins>690 руб</ins><del>990 руб</del>
+            </span>
+            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+          </div>
+        </article>
+      </li>
+      <li class="specials__item specials__item-mobile">
+        <article class="card card-specials">
+          <span class="card-specials__discount"> − 10 000 </span>
+          <div class="card-specials__top">
+            <picture>
+              <source srcset="./img/card-img-5.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/card-img-5.png"
+                class="card-specials__top--image card-specials__top--image-5"
+                width="254"
+                height="123"
+                alt="Диван вел-флок “Z-85”"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-specials__content">
+            <h3 class="card__title card-specials__title">Диван вел-флок<br />­“Z-85”­</h3>
+            <span class="card__price card-specials__price"
+              ><ins>22 990 руб</ins><del>32 990 руб</del>
+            </span>
+            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+          </div>
+        </article>
+      </li>
+      <li class="specials__item specials__item-mobile">
+        <article class="card card-specials">
+          <span class="card-specials__discount"> − 700 </span>
+          <div class="card-specials__top">
+            <picture>
+              <source srcset="./img/card-img-6.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/card-img-6.png"
+                class="card-specials__top--image"
+                width="183"
+                height="218"
+                alt="Термометр + гидрометр “H-18”"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-specials__content">
+            <h3 class="card__title card-specials__title">Термометр + гидрометр ­“H-18”­</h3>
+            <span class="card__price card-specials__price"
+              ><ins>1 390 руб</ins><del>2 090 руб</del>
             </span>
             <button class="btn-reset btn btn--secondary card__btn">Купить</button>
           </div>
@@ -268,7 +348,7 @@
               ­“R-94”­
             </h3>
             <span class="card__price card-rating__price">94 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -304,7 +384,7 @@
               ­“T-75”­
             </h3>
             <span class="card__price card-rating__price">69 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -340,7 +420,7 @@
               ­“D-31”­
             </h3>
             <span class="card__price card-rating__price">28 490 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -376,7 +456,7 @@
               ­“Y-68”­
             </h3>
             <span class="card__price card-rating__price">22 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -412,7 +492,7 @@
               ­“W-95”­
             </h3>
             <span class="card__price card-rating__price">22 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -448,11 +528,11 @@
               ­“G-41”­
             </h3>
             <span class="card__price card-rating__price">17 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
-      <li class="rating__item">
+      <li class="rating__item rating__item--tablet">
         <article class="card card-rating">
           <span class="card-rating__count">
             <img
@@ -484,11 +564,11 @@
               ­“V-43”­
             </h3>
             <span class="card__price card-rating__price">19 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
-      <li class="rating__item">
+      <li class="rating__item rating__item--tablet">
         <article class="card card-rating">
           <span class="card-rating__count">
             <img
@@ -520,7 +600,7 @@
               ­“S-99”­
             </h3>
             <span class="card__price card-rating__price">19 990 руб</span>
-            <button class="btn-reset btn btn--secondary card__btn">Купить</button>
+            <button class="btn-reset btn btn--secondary card__btn card-rating__btn">Купить</button>
           </div>
         </article>
       </li>
@@ -557,13 +637,12 @@
           <h3 class="card__title card-categories__title">Диваны</h3>
           <div class="card-categories__center">
             <picture>
+              <source srcset="./img/categories-img-1-mobile.png" media="(max-width: 576px)" />
               <source srcset="./img/categories-img-1.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/categories-img-1.png"
                 class="card-categories__center--image"
-                width="515"
-                height="308"
                 alt="Диваны"
               />
             </picture>
@@ -578,31 +657,33 @@
           </a>
         </article>
       </li>
-      <li class="categories__item categories__item--top">
-        <article class="card card-categories">
-          <ul class="list-reset card-categories__list">
+      <li class="categories__item categories__item--tablet categories__item--top">
+        <article class="card card-categories card-categories--mobile">
+          <ul class="list-reset card-categories__list card-categories__list--mobile">
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Мягкие</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile">Мягкие</a>
             </li>
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Кресла-кровати</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile"
+                >Кресла-кровати</a
+              >
             </li>
           </ul>
-          <h3 class="card__title card-categories__title">Кресла</h3>
-          <div class="card-categories__center">
+          <h3 class="card__title card-categories__title card-categories__title--mobile">Кресла</h3>
+          <div class="card-categories__center card-categories__center-2">
             <picture>
+              <source srcset="./img/categories-img-2-mobile.png" media="(max-width: 576px)" />
+              <source srcset="./img/categories-img-2-tablet.png" media="(max-width: 1024px)" />
               <source srcset="./img/categories-img-2.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/categories-img-2.png"
                 class="card-categories__center--image"
-                width="515"
-                height="308"
                 alt="Кресла"
               />
             </picture>
           </div>
-          <a href="#" class="card-categories__link-category">
+          <a href="#" class="card-categories__link-category card-categories__link-category-2">
             <span class="card-categories__link-category--text">В каталог</span>
             <span class="card-categories__link-category--circle">
               <svg class="card-categories__link-category--svg">
@@ -613,30 +694,34 @@
         </article>
       </li>
       <li class="categories__item">
-        <article class="card card-categories">
-          <ul class="list-reset card-categories__list">
+        <article class="card card-categories card-categories--mobile">
+          <ul class="list-reset card-categories__list card-categories__list--mobile">
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Односпальные</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile"
+                >Односпальные</a
+              >
             </li>
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Двуспальные</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile"
+                >Двуспальные</a
+              >
             </li>
           </ul>
-          <h3 class="card__title card-categories__title">Кровати</h3>
-          <div class="card-categories__center">
+          <h3 class="card__title card-categories__title card-categories__title--mobile">Кровати</h3>
+          <div class="card-categories__center card-categories__center-3">
             <picture>
+              <source srcset="./img/categories-img-3-mobile.png" media="(max-width: 576px)" />
+              <source srcset="./img/categories-img-3-tablet.png" media="(max-width: 1024px)" />
               <source srcset="./img/categories-img-3.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/categories-img-3.png"
                 class="card-categories__center--image"
-                width="306"
-                height="202"
                 alt="Кровати"
               />
             </picture>
           </div>
-          <a href="#" class="card-categories__link-category">
+          <a href="#" class="card-categories__link-category card-categories__link-category-3">
             <span class="card-categories__link-category--text">В каталог</span>
             <span class="card-categories__link-category--circle">
               <svg class="card-categories__link-category--svg">
@@ -647,30 +732,34 @@
         </article>
       </li>
       <li class="categories__item">
-        <article class="card card-categories">
-          <ul class="list-reset card-categories__list">
+        <article class="card card-categories card-categories--mobile">
+          <ul class="list-reset card-categories__list card-categories__list--mobile">
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Тумбы</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile">Тумбы</a>
             </li>
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Комоды</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile">Комоды</a>
             </li>
           </ul>
-          <h3 class="card__title card-categories__title">Тумбы и комоды</h3>
-          <div class="card-categories__center">
+          <h3
+            class="card__title card-categories__title card-categories__title-4 card-categories__title--mobile"
+          >
+            Тумбы и комоды
+          </h3>
+          <div class="card-categories__center card-categories__center-4">
             <picture>
+              <source srcset="./img/categories-img-4-mobile.png" media="(max-width: 576px)" />
+              <source srcset="./img/categories-img-4-tablet.png" media="(max-width: 1024px)" />
               <source srcset="./img/categories-img-4.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/categories-img-4.png"
                 class="card-categories__center--image"
-                width="330"
-                height="202"
                 alt="Тумбы и комоды"
               />
             </picture>
           </div>
-          <a href="#" class="card-categories__link-category">
+          <a href="#" class="card-categories__link-category card-categories__link-category-4">
             <span class="card-categories__link-category--text">В каталог</span>
             <span class="card-categories__link-category--circle">
               <svg class="card-categories__link-category--svg">
@@ -681,30 +770,32 @@
         </article>
       </li>
       <li class="categories__item">
-        <article class="card card-categories">
-          <ul class="list-reset card-categories__list">
+        <article class="card card-categories card-categories--mobile">
+          <ul class="list-reset card-categories__list card-categories__list--mobile">
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Деревянные</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile">Деревянные</a>
             </li>
             <li class="card-categories__item">
-              <a href="#" class="card-categories__link">Металлокаркас</a>
+              <a href="#" class="card-categories__link card-categories__link--mobile"
+                >Металлокаркас</a
+              >
             </li>
           </ul>
-          <h3 class="card__title card-categories__title">Стулья</h3>
-          <div class="card-categories__center">
+          <h3 class="card__title card-categories__title card-categories__title--mobile">Стулья</h3>
+          <div class="card-categories__center card-categories__center-5">
             <picture>
+              <source srcset="./img/categories-img-5-mobile.png" media="(max-width: 576px)" />
+              <source srcset="./img/categories-img-5-tablet.png" media="(max-width: 1024px)" />
               <source srcset="./img/categories-img-5.webp" type="image/webp" />
               <img
                 loading="lazy"
                 src="./img/categories-img-5.png"
                 class="card-categories__center--image"
-                width="258"
-                height="202"
                 alt="Стулья"
               />
             </picture>
           </div>
-          <a href="#" class="card-categories__link-category">
+          <a href="#" class="card-categories__link-category card-categories__link-category-5">
             <span class="card-categories__link-category--text">В каталог</span>
             <span class="card-categories__link-category--circle">
               <svg class="card-categories__link-category--svg">
@@ -753,6 +844,76 @@
               <img
                 loading="lazy"
                 src="./img/useful-img-2.png"
+                class="card-useful__top--image"
+                width="624"
+                height="426"
+                alt="изображение комнаты"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-useful__content">
+            <p class="card-useful__desc">
+              Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+            </p>
+            <a href="#" class="btn btn--secondary card__btn card-useful__link">Читать</a>
+          </div>
+        </article>
+      </li>
+      <li class="useful__item useful__item-tablet">
+        <article class="card card-useful">
+          <div class="card-useful__top">
+            <picture>
+              <source srcset="./img/useful-img-3.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/useful-img-3.png"
+                class="card-useful__top--image"
+                width="624"
+                height="426"
+                alt="изображение комнаты"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-useful__content">
+            <p class="card-useful__desc">
+              Ясность нашей позиции очевидна: укрепление и развитие внутренней структуры?
+            </p>
+            <a href="#" class="btn btn--secondary card__btn card-useful__link">Читать</a>
+          </div>
+        </article>
+      </li>
+      <li class="useful__item useful__item-mobile">
+        <article class="card card-useful">
+          <div class="card-useful__top">
+            <picture>
+              <source srcset="./img/useful-img-4.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/useful-img-4.png"
+                class="card-useful__top--image"
+                width="624"
+                height="426"
+                alt="изображение комнаты"
+              />
+            </picture>
+          </div>
+          <div class="card__content card-useful__content">
+            <p class="card-useful__desc">
+              Прежде всего, консультация с широким активом однозначно фиксирует необходимость
+              распределения?
+            </p>
+            <a href="#" class="btn btn--secondary card__btn card-useful__link">Читать</a>
+          </div>
+        </article>
+      </li>
+      <li class="useful__item useful__item-mobile">
+        <article class="card card-useful">
+          <div class="card-useful__top">
+            <picture>
+              <source srcset="./img/useful-img-5.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/useful-img-5.png"
                 class="card-useful__top--image"
                 width="624"
                 height="426"
